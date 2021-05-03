@@ -25,7 +25,7 @@ const CityCard = ({ timeZone, timeZones, setTimeZones }) => {
 
     return () => clearTimeout(timeout);
   });
-console.log(timeZoneData)
+  console.log(timeZoneData);
   return (
     <ContainerCard>
       <RiCloseCircleFill

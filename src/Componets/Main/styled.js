@@ -1,6 +1,5 @@
-
 import styled from "styled-components";
-import {mobile} from "../../Helper/styleHelper"
+import { mobile } from "../../Helper/styleHelper";
 
 export const Container = styled.div`
   width: 100%;
@@ -8,7 +7,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   padding: 60px 0;
-  @media (max-width: ${mobile})  {
+  @media (max-width: ${mobile}) {
     padding-bottom: 120px;
   }
 `;

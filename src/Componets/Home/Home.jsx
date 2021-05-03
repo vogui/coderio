@@ -1,5 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { Container, Form, Buttom, Input, DropDown, P, ContainerCards } from "./styled";
+import {
+  Container,
+  Form,
+  Buttom,
+  Input,
+  DropDown,
+  P,
+  ContainerCards,
+} from "./styled";
 import Cities from "../Cities/Cities";
 import axios from "axios";
 import CityCard from "../CityCard/CityCard";
@@ -18,11 +26,11 @@ const Home = () => {
   };
 
   useEffect(() => {
-  //  if(cities.length === 0){
+    //  if(cities.length === 0){
     axios
       .get("http://localhost:8000/api/timezones")
       .then((res) => setCities(res.data));
-  //  }
+    //  }
   }, []);
   console.log(cities);
 
@@ -32,7 +40,7 @@ const Home = () => {
         <P>Cargando ciudades ...</P>
       ) : (
         <Form onSubmit={handleSubmit}>
-           {city ? <Buttom onClick={() => setCity("")}>Close</Buttom> : null}
+          {city ? <Buttom onClick={() => setCity("")}>Close</Buttom> : null}
           <Input
             placeholder="Enter your city. Example: 'Africa/Abidjan'"
             onChange={handleChange}
@@ -52,7 +60,6 @@ const Home = () => {
                 )
               : null}
           </DropDown>
-         
         </Form>
       )}
       <ContainerCards>

@@ -23,7 +23,7 @@ const Footer = () => {
       </Contact>
       <Contact>
         <A href="mailto: guillevogemedialdea@gmail.com" target="_blank">
-          <HiOutlineMail/>  
+          <HiOutlineMail />
           /Contact
         </A>
       </Contact>

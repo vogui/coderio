@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { mobile, colors } from "../../Helper/styleHelper";
 
-
 export const Container = styled.div`
   width: 90%;
   margin: 24px auto;
@@ -11,15 +10,15 @@ export const Container = styled.div`
 `;
 
 export const Form = styled.form`
- position: relative;
- width: 50%;
- display:flex;
- align-items: center;
- flex-direction: column;
- justify-content: center;
- @media (max-width: ${mobile}){
- width: 100%;
- }
+  position: relative;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  @media (max-width: ${mobile}) {
+    width: 100%;
+  }
 `;
 
 export const Input = styled.input`
@@ -34,16 +33,18 @@ export const Input = styled.input`
   font-weight: 400;
   text-overflow: ellipsis;
   font-size: 15px;
-  ${(props) => (props.city?`
+  ${(props) =>
+    props.city
+      ? `
   border-radius: 6px 6px 0 0;
-  border-bottom: none;`:
-  ``)}
+  border-bottom: none;`
+      : ``}
 `;
 export const Buttom = styled.button`
   width: 20%;
   height: 40px;
-  margin-bottom:10px;
-  border-color:${colors.brown};
+  margin-bottom: 10px;
+  border-color: ${colors.brown};
   border-width: 6px;
   border-style: dashed solid;
   background: ${colors.brown2};
@@ -51,17 +52,16 @@ export const Buttom = styled.button`
   cursor: pointer;
   font-family: Roboto;
   font-weight: 500;
-  font-size:120%;
+  font-size: 120%;
   @media (max-width: ${mobile}) {
     width: 100px;
   }
-  
-  
-`
+`;
 
 export const DropDown = styled.div`
-${(props) => {
-  return props.city === ""?`visibility: hidden`:`visibility: visible`}};
+  ${(props) => {
+    return props.city === "" ? `visibility: hidden` : `visibility: visible`;
+  }};
   position: absolute;
   top: 90px;
   right: 0;
@@ -121,13 +121,13 @@ export const P = styled.p`
   font-size: 23px;
 `;
 export const ContainerCards = styled.div`
-display: flex;
-flex-wrap: wrap;
-align-items: flex-start;
-justify-content: space-around;
-width: 100%;
-margin: 24px auto 0;
-@media (max-width: ${mobile}) {
-  justify-content: center;
-}
-`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
+  margin: 24px auto 0;
+  @media (max-width: ${mobile}) {
+    justify-content: center;
+  }
+`;

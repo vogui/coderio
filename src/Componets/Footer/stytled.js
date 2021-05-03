@@ -7,14 +7,14 @@ export const Container = styled.div`
   position: fixed;
   bottom: 0;
   left: 0;
-  background:${colors.brown};
+  background: ${colors.brown};
   box-sizing: border-box;
   padding: 0 30px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   z-index: 2;
-  @media (max-width: ${mobile})  {
+  @media (max-width: ${mobile}) {
     flex-direction: column;
     height: 120px;
     justify-content: center;
@@ -28,12 +28,12 @@ export const Contact = styled.div`
   justify-content: center;
 `;
 
-export const A  = styled.a `
-display: flex;
-align-items: center;
-text-decoration: none;
-font-family: Roboto;
-font-weight: 300;
-font-size: 100%;
-color: #EEEEF0;
-`
+export const A = styled.a`
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 100%;
+  color: #eeeef0;
+`;

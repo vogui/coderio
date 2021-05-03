@@ -1,6 +1,5 @@
-
 import React from "react";
-import{Container, P, ContainerLogo, Img} from "./styled"
+import { Container, P } from "./styled";
 
 const Header = () => {
   return (
